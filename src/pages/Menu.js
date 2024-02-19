@@ -11,6 +11,9 @@ import {
 } from "@mui/material";
 
 const Menu = () => {
+  const handleClick=()=>{
+    alert("Hi")
+  }
   return (
     <Layout>
       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
@@ -24,7 +27,7 @@ const Menu = () => {
                 alt={menu.name}
               />
               <CardContent>
-                <Typography variant="h5" gutterBottom component={"div"}>
+                <Typography variant="h5" gutterBottom component={"div"} onClick={handleChange}>
                   {menu.name}
                 </Typography>
                 <Typography variant="body2">{menu.description}</Typography>
